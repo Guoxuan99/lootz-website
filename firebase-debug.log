@@ -1,0 +1,296 @@
+[debug] [2026-05-24T04:33:54.727Z] ----------------------------------------------------------------------
+[debug] [2026-05-24T04:33:54.732Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-05-24T04:33:54.733Z] CLI Version:   15.18.0
+[debug] [2026-05-24T04:33:54.733Z] Platform:      win32
+[debug] [2026-05-24T04:33:54.733Z] Node Version:  v24.13.0
+[debug] [2026-05-24T04:33:54.733Z] Time:          Sun May 24 2026 12:33:54 GMT+0800 (Malaysia Time)
+[debug] [2026-05-24T04:33:54.733Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-24T04:34:00.014Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-24T04:34:00.014Z] > authorizing via signed-in user (guoxuan99@gmail.com)
+[debug] [2026-05-24T04:34:00.014Z] [iam] checking project lootz-ai for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-05-24T04:34:00.016Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:00.017Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:00.018Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/lootz-ai:testIamPermissions [none]
+[debug] [2026-05-24T04:34:00.018Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/lootz-ai:testIamPermissions  x-goog-user-project=lootz-ai
+[debug] [2026-05-24T04:34:00.018Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lootz-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-24T04:34:01.187Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/lootz-ai:testIamPermissions 200
+[debug] [2026-05-24T04:34:01.187Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lootz-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-24T04:34:01.189Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:01.189Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:01.190Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lootz-ai [none]
+[debug] [2026-05-24T04:34:12.795Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lootz-ai 200
+[debug] [2026-05-24T04:34:12.795Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lootz-ai {"projectId":"lootz-ai","projectNumber":"73205510627","displayName":"lootz-ai","name":"projects/lootz-ai","resources":{"hostingSite":"lootz-ai"},"state":"ACTIVE","etag":"1_bb4c9e41-613c-4de8-8619-7e44993e64dc"}
+[info] 
+[info] === Deploying to 'lootz-ai'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-05-24T04:34:12.802Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:12.802Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:12.802Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/lootz-ai/sites/lootz-ai [none]
+[debug] [2026-05-24T04:34:13.808Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/lootz-ai/sites/lootz-ai 200
+[debug] [2026-05-24T04:34:13.808Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/lootz-ai/sites/lootz-ai {"name":"projects/lootz-ai/sites/lootz-ai","defaultUrl":"https://lootz-ai.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-05-24T04:34:13.813Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:13.813Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:13.813Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/versions [none]
+[debug] [2026-05-24T04:34:13.813Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-05-24T04:34:15.368Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/versions 200
+[debug] [2026-05-24T04:34:15.369Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/versions {"name":"projects/73205510627/sites/lootz-ai/versions/8109c6fc8fa04903","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[lootz-ai]: beginning deploy... 
+[info] i  hosting[lootz-ai]: found 35 files in . 
+[debug] [2026-05-24T04:34:15.425Z] [hosting] uploading with 200 concurrency
+[debug] [2026-05-24T04:34:15.426Z] [hosting] hash cache [] not populated
+[debug] [2026-05-24T04:34:15.560Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:15.560Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:15.562Z] [hosting] hash cache [] stored for 35 files
+[debug] [2026-05-24T04:34:15.563Z] [hosting][hash queue][FINAL] {"max":126,"min":42,"avg":73.54285714285714,"active":0,"complete":35,"success":35,"errored":0,"retried":0,"total":35,"elapsed":135}
+[debug] [2026-05-24T04:34:15.563Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/73205510627/sites/lootz-ai/versions/8109c6fc8fa04903:populateFiles [none]
+[debug] [2026-05-24T04:34:15.563Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/73205510627/sites/lootz-ai/versions/8109c6fc8fa04903:populateFiles {"files":{"/README.md":"99d08fcd09e66ce216334cce6781d9707a3280fe7cf3277f49ebe6eea49f9457","/.git/packed-refs":"efa3a3994a452cd61119d6848156d436f22eff381658fd33e005b8cca2d6a472","/script.js":"93d2ed6011f640ed6596d61d20a86c6c11deb9ba454e4441638ab268d79396b8","/.git/index":"7b6d89f76857ebaf9234de16d45e2a5d2ae8f91fdf0911c4f12e4da96daf274b","/.git/HEAD":"23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48","/.git/description":"82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342","/favicon.ico":"9193f72aa0f9128f5d41bc2889d129b2e53c4d2145a2a4151de922ca96e10afa","/.git/config":"734c9d6844c51f68becb51e7fc9e3b4a3347c7d07be610e04e0103d437d4a407","/index.html":"78cb8c493588b7643bcd6369c6a2d952c7c5b556b3db409c115583c9d8646e13","/.git/refs/remotes/origin/HEAD":"309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32","/.git/refs/heads/main":"1624c82a27b9d07e874457fa6cd870145bcaef25f21c48861b0b67ff5145b981","/material/Lootz_Final_Website_Content_Enterprise_AI.pdf":"1974e35c866586329efbe12dfab68d851c6b8e5ae2d63abb7c4b98f3f507e4bc","/.git/objects/pack/pack-c3138c86dcf558bae02bc783cda497ca1978cb1b.pack":"d44b537f64abbbeed75f170dada9b9159b9645071f2c2c292cfd91cf78098a07","/.git/objects/pack/pack-c3138c86dcf558bae02bc783cda497ca1978cb1b.idx":"4c84f4809fe4964e7e1f154e7c8601ed14fc7c11acf485658eef25d83ae00ceb","/.git/logs/HEAD":"c6b4c494dbaef932a0c7819f23e67a5c7f5a28b4ebae5ad25d69827f32f2ae82","/.git/logs/refs/remotes/origin/HEAD":"c6b4c494dbaef932a0c7819f23e67a5c7f5a28b4ebae5ad25d69827f32f2ae82","/.git/logs/refs/heads/main":"c6b4c494dbaef932a0c7819f23e67a5c7f5a28b4ebae5ad25d69827f32f2ae82","/.git/info/exclude":"994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d","/.git/hooks/update.sample":"a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee","/.git/hooks/push-to-checkout.sample":"b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b","/.git/hooks/pre-receive.sample":"518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67","/.git/hooks/prepare-commit-msg.sample":"da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc","/.git/hooks/pre-push.sample":"661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64","/.git/hooks/pre-merge-commit.sample":"08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c","/.git/hooks/pre-applypatch.sample":"efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36","/.git/hooks/post-update.sample":"4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec","/.git/hooks/pre-rebase.sample":"4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e","/.git/hooks/pre-commit.sample":"b46da025c1ef7e73918c7904463e346695af9ac726f5db14e73a7cb5afe04a50","/.git/hooks/fsmonitor-watchman.sample":"c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d","/.git/hooks/applypatch-msg.sample":"e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3","/.git/hooks/commit-msg.sample":"00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f","/styles.css":"4c00483813eb84c10998d5772df4be7d64af2e5b2685a75df4ea39cea2a009f6","/pdf_content.txt":"8cd9c881a48c11c49be10dfc8a602c1c89a7a09f6adde11876753e554421fe16","/material/Lootz_logo_1.png":"bb8281767689a1eff39aef44790ec8685c9ed844892545f387dfb936a8c32ecd","/material/Lootz_logo_2.png":"724cb38995a34575719a4f87bf38a08d671eb2a557ace7622897311f14cd764a"}}
+[debug] [2026-05-24T04:34:16.326Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/73205510627/sites/lootz-ai/versions/8109c6fc8fa04903:populateFiles 200
+[debug] [2026-05-24T04:34:16.326Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/73205510627/sites/lootz-ai/versions/8109c6fc8fa04903:populateFiles {"uploadRequiredHashes":["c6b4c494dbaef932a0c7819f23e67a5c7f5a28b4ebae5ad25d69827f32f2ae82","b46da025c1ef7e73918c7904463e346695af9ac726f5db14e73a7cb5afe04a50","78cb8c493588b7643bcd6369c6a2d952c7c5b556b3db409c115583c9d8646e13","724cb38995a34575719a4f87bf38a08d671eb2a557ace7622897311f14cd764a","994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d","518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67","da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc","4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec","efa3a3994a452cd61119d6848156d436f22eff381658fd33e005b8cca2d6a472","99d08fcd09e66ce216334cce6781d9707a3280fe7cf3277f49ebe6eea49f9457","d44b537f64abbbeed75f170dada9b9159b9645071f2c2c292cfd91cf78098a07","bb8281767689a1eff39aef44790ec8685c9ed844892545f387dfb936a8c32ecd","e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3","08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c","4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e","7b6d89f76857ebaf9234de16d45e2a5d2ae8f91fdf0911c4f12e4da96daf274b","23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48","4c00483813eb84c10998d5772df4be7d64af2e5b2685a75df4ea39cea2a009f6","00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f","c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d","9193f72aa0f9128f5d41bc2889d129b2e53c4d2145a2a4151de922ca96e10afa","8cd9c881a48c11c49be10dfc8a602c1c89a7a09f6adde11876753e554421fe16","82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342","4c84f4809fe4964e7e1f154e7c8601ed14fc7c11acf485658eef25d83ae00ceb","661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64","734c9d6844c51f68becb51e7fc9e3b4a3347c7d07be610e04e0103d437d4a407","b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b","1974e35c866586329efbe12dfab68d851c6b8e5ae2d63abb7c4b98f3f507e4bc","a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee","93d2ed6011f640ed6596d61d20a86c6c11deb9ba454e4441638ab268d79396b8","1624c82a27b9d07e874457fa6cd870145bcaef25f21c48861b0b67ff5145b981","309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32","efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files"}
+[debug] [2026-05-24T04:34:16.327Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.327Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.327Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.327Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.328Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.328Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.328Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.328Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.328Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.328Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.328Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.328Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.329Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.329Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.329Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.329Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.329Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.329Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.329Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.329Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.330Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.330Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.330Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.331Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.331Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.331Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.332Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.332Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.332Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.332Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.333Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.333Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.333Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.333Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.333Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.334Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.334Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.334Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.334Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.334Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.334Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.334Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.335Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.335Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.335Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.335Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.335Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.335Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.336Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.336Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.336Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.336Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.336Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.336Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.336Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.337Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.337Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.337Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.338Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.338Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.338Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.338Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.339Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.339Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.339Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.340Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:16.340Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/c6b4c494dbaef932a0c7819f23e67a5c7f5a28b4ebae5ad25d69827f32f2ae82 [none]
+[debug] [2026-05-24T04:34:16.340Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/c6b4c494dbaef932a0c7819f23e67a5c7f5a28b4ebae5ad25d69827f32f2ae82 [stream]
+[debug] [2026-05-24T04:34:16.342Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/b46da025c1ef7e73918c7904463e346695af9ac726f5db14e73a7cb5afe04a50 [none]
+[debug] [2026-05-24T04:34:16.343Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/b46da025c1ef7e73918c7904463e346695af9ac726f5db14e73a7cb5afe04a50 [stream]
+[debug] [2026-05-24T04:34:16.344Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/78cb8c493588b7643bcd6369c6a2d952c7c5b556b3db409c115583c9d8646e13 [none]
+[debug] [2026-05-24T04:34:16.345Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/78cb8c493588b7643bcd6369c6a2d952c7c5b556b3db409c115583c9d8646e13 [stream]
+[debug] [2026-05-24T04:34:16.346Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/724cb38995a34575719a4f87bf38a08d671eb2a557ace7622897311f14cd764a [none]
+[debug] [2026-05-24T04:34:16.347Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/724cb38995a34575719a4f87bf38a08d671eb2a557ace7622897311f14cd764a [stream]
+[debug] [2026-05-24T04:34:16.350Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d [none]
+[debug] [2026-05-24T04:34:16.350Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d [stream]
+[debug] [2026-05-24T04:34:16.352Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67 [none]
+[debug] [2026-05-24T04:34:16.352Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67 [stream]
+[debug] [2026-05-24T04:34:16.354Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc [none]
+[debug] [2026-05-24T04:34:16.354Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc [stream]
+[debug] [2026-05-24T04:34:16.356Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec [none]
+[debug] [2026-05-24T04:34:16.356Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec [stream]
+[debug] [2026-05-24T04:34:16.357Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/efa3a3994a452cd61119d6848156d436f22eff381658fd33e005b8cca2d6a472 [none]
+[debug] [2026-05-24T04:34:16.357Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/efa3a3994a452cd61119d6848156d436f22eff381658fd33e005b8cca2d6a472 [stream]
+[debug] [2026-05-24T04:34:16.359Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/99d08fcd09e66ce216334cce6781d9707a3280fe7cf3277f49ebe6eea49f9457 [none]
+[debug] [2026-05-24T04:34:16.359Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/99d08fcd09e66ce216334cce6781d9707a3280fe7cf3277f49ebe6eea49f9457 [stream]
+[debug] [2026-05-24T04:34:16.361Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/d44b537f64abbbeed75f170dada9b9159b9645071f2c2c292cfd91cf78098a07 [none]
+[debug] [2026-05-24T04:34:16.361Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/d44b537f64abbbeed75f170dada9b9159b9645071f2c2c292cfd91cf78098a07 [stream]
+[debug] [2026-05-24T04:34:16.363Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/bb8281767689a1eff39aef44790ec8685c9ed844892545f387dfb936a8c32ecd [none]
+[debug] [2026-05-24T04:34:16.363Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/bb8281767689a1eff39aef44790ec8685c9ed844892545f387dfb936a8c32ecd [stream]
+[debug] [2026-05-24T04:34:16.365Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3 [none]
+[debug] [2026-05-24T04:34:16.365Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3 [stream]
+[debug] [2026-05-24T04:34:16.367Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c [none]
+[debug] [2026-05-24T04:34:16.367Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c [stream]
+[debug] [2026-05-24T04:34:16.369Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e [none]
+[debug] [2026-05-24T04:34:16.369Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e [stream]
+[debug] [2026-05-24T04:34:16.371Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/7b6d89f76857ebaf9234de16d45e2a5d2ae8f91fdf0911c4f12e4da96daf274b [none]
+[debug] [2026-05-24T04:34:16.371Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/7b6d89f76857ebaf9234de16d45e2a5d2ae8f91fdf0911c4f12e4da96daf274b [stream]
+[debug] [2026-05-24T04:34:16.374Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48 [none]
+[debug] [2026-05-24T04:34:16.374Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48 [stream]
+[debug] [2026-05-24T04:34:16.376Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c00483813eb84c10998d5772df4be7d64af2e5b2685a75df4ea39cea2a009f6 [none]
+[debug] [2026-05-24T04:34:16.376Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c00483813eb84c10998d5772df4be7d64af2e5b2685a75df4ea39cea2a009f6 [stream]
+[debug] [2026-05-24T04:34:16.378Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f [none]
+[debug] [2026-05-24T04:34:16.378Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f [stream]
+[debug] [2026-05-24T04:34:16.380Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d [none]
+[debug] [2026-05-24T04:34:16.381Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d [stream]
+[debug] [2026-05-24T04:34:16.382Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/9193f72aa0f9128f5d41bc2889d129b2e53c4d2145a2a4151de922ca96e10afa [none]
+[debug] [2026-05-24T04:34:16.383Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/9193f72aa0f9128f5d41bc2889d129b2e53c4d2145a2a4151de922ca96e10afa [stream]
+[debug] [2026-05-24T04:34:16.384Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/8cd9c881a48c11c49be10dfc8a602c1c89a7a09f6adde11876753e554421fe16 [none]
+[debug] [2026-05-24T04:34:16.384Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/8cd9c881a48c11c49be10dfc8a602c1c89a7a09f6adde11876753e554421fe16 [stream]
+[debug] [2026-05-24T04:34:16.385Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342 [none]
+[debug] [2026-05-24T04:34:16.386Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342 [stream]
+[debug] [2026-05-24T04:34:16.387Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c84f4809fe4964e7e1f154e7c8601ed14fc7c11acf485658eef25d83ae00ceb [none]
+[debug] [2026-05-24T04:34:16.387Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c84f4809fe4964e7e1f154e7c8601ed14fc7c11acf485658eef25d83ae00ceb [stream]
+[debug] [2026-05-24T04:34:16.388Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64 [none]
+[debug] [2026-05-24T04:34:16.388Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64 [stream]
+[debug] [2026-05-24T04:34:16.389Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/734c9d6844c51f68becb51e7fc9e3b4a3347c7d07be610e04e0103d437d4a407 [none]
+[debug] [2026-05-24T04:34:16.389Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/734c9d6844c51f68becb51e7fc9e3b4a3347c7d07be610e04e0103d437d4a407 [stream]
+[debug] [2026-05-24T04:34:16.391Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b [none]
+[debug] [2026-05-24T04:34:16.391Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b [stream]
+[debug] [2026-05-24T04:34:16.392Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/1974e35c866586329efbe12dfab68d851c6b8e5ae2d63abb7c4b98f3f507e4bc [none]
+[debug] [2026-05-24T04:34:16.392Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/1974e35c866586329efbe12dfab68d851c6b8e5ae2d63abb7c4b98f3f507e4bc [stream]
+[debug] [2026-05-24T04:34:16.394Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee [none]
+[debug] [2026-05-24T04:34:16.394Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee [stream]
+[debug] [2026-05-24T04:34:16.395Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/93d2ed6011f640ed6596d61d20a86c6c11deb9ba454e4441638ab268d79396b8 [none]
+[debug] [2026-05-24T04:34:16.395Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/93d2ed6011f640ed6596d61d20a86c6c11deb9ba454e4441638ab268d79396b8 [stream]
+[debug] [2026-05-24T04:34:16.397Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/1624c82a27b9d07e874457fa6cd870145bcaef25f21c48861b0b67ff5145b981 [none]
+[debug] [2026-05-24T04:34:16.397Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/1624c82a27b9d07e874457fa6cd870145bcaef25f21c48861b0b67ff5145b981 [stream]
+[debug] [2026-05-24T04:34:16.399Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32 [none]
+[debug] [2026-05-24T04:34:16.399Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32 [stream]
+[debug] [2026-05-24T04:34:16.400Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36 [none]
+[debug] [2026-05-24T04:34:16.400Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36 [stream]
+[debug] [2026-05-24T04:34:16.404Z] [hosting][populate queue][FINAL] {"max":780,"min":780,"avg":780,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":844}
+[debug] [2026-05-24T04:34:16.404Z] [hosting] uploads queued: 33
+[debug] [2026-05-24T04:34:17.886Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b 200
+[debug] [2026-05-24T04:34:17.886Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b [stream]
+[debug] [2026-05-24T04:34:17.891Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/b46da025c1ef7e73918c7904463e346695af9ac726f5db14e73a7cb5afe04a50 200
+[debug] [2026-05-24T04:34:17.891Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/b46da025c1ef7e73918c7904463e346695af9ac726f5db14e73a7cb5afe04a50 [stream]
+[debug] [2026-05-24T04:34:17.892Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc 200
+[debug] [2026-05-24T04:34:17.892Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc [stream]
+[debug] [2026-05-24T04:34:17.942Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee 200
+[debug] [2026-05-24T04:34:17.942Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee [stream]
+[debug] [2026-05-24T04:34:17.961Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342 200
+[debug] [2026-05-24T04:34:17.961Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342 [stream]
+[debug] [2026-05-24T04:34:17.987Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32 200
+[debug] [2026-05-24T04:34:17.987Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32 [stream]
+[debug] [2026-05-24T04:34:18.047Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d 200
+[debug] [2026-05-24T04:34:18.047Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d [stream]
+[debug] [2026-05-24T04:34:18.051Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48 200
+[debug] [2026-05-24T04:34:18.051Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48 [stream]
+[debug] [2026-05-24T04:34:18.053Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f 200
+[debug] [2026-05-24T04:34:18.053Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f [stream]
+[debug] [2026-05-24T04:34:18.059Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec 200
+[debug] [2026-05-24T04:34:18.060Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec [stream]
+[debug] [2026-05-24T04:34:18.134Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d 200
+[debug] [2026-05-24T04:34:18.134Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d [stream]
+[debug] [2026-05-24T04:34:18.136Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e 200
+[debug] [2026-05-24T04:34:18.136Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e [stream]
+[debug] [2026-05-24T04:34:18.143Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c 200
+[debug] [2026-05-24T04:34:18.143Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c [stream]
+[debug] [2026-05-24T04:34:18.153Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67 200
+[debug] [2026-05-24T04:34:18.153Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67 [stream]
+[debug] [2026-05-24T04:34:18.161Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64 200
+[debug] [2026-05-24T04:34:18.161Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64 [stream]
+[debug] [2026-05-24T04:34:18.197Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/efa3a3994a452cd61119d6848156d436f22eff381658fd33e005b8cca2d6a472 200
+[debug] [2026-05-24T04:34:18.198Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/efa3a3994a452cd61119d6848156d436f22eff381658fd33e005b8cca2d6a472 [stream]
+[debug] [2026-05-24T04:34:18.233Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36 200
+[debug] [2026-05-24T04:34:18.233Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36 [stream]
+[debug] [2026-05-24T04:34:18.246Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/c6b4c494dbaef932a0c7819f23e67a5c7f5a28b4ebae5ad25d69827f32f2ae82 200
+[debug] [2026-05-24T04:34:18.246Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/c6b4c494dbaef932a0c7819f23e67a5c7f5a28b4ebae5ad25d69827f32f2ae82 [stream]
+[debug] [2026-05-24T04:34:18.286Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/8cd9c881a48c11c49be10dfc8a602c1c89a7a09f6adde11876753e554421fe16 200
+[debug] [2026-05-24T04:34:18.286Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/8cd9c881a48c11c49be10dfc8a602c1c89a7a09f6adde11876753e554421fe16 [stream]
+[debug] [2026-05-24T04:34:18.313Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c00483813eb84c10998d5772df4be7d64af2e5b2685a75df4ea39cea2a009f6 200
+[debug] [2026-05-24T04:34:18.313Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c00483813eb84c10998d5772df4be7d64af2e5b2685a75df4ea39cea2a009f6 [stream]
+[debug] [2026-05-24T04:34:18.327Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/d44b537f64abbbeed75f170dada9b9159b9645071f2c2c292cfd91cf78098a07 200
+[debug] [2026-05-24T04:34:18.328Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/d44b537f64abbbeed75f170dada9b9159b9645071f2c2c292cfd91cf78098a07 [stream]
+[debug] [2026-05-24T04:34:18.337Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/7b6d89f76857ebaf9234de16d45e2a5d2ae8f91fdf0911c4f12e4da96daf274b 200
+[debug] [2026-05-24T04:34:18.337Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/7b6d89f76857ebaf9234de16d45e2a5d2ae8f91fdf0911c4f12e4da96daf274b [stream]
+[debug] [2026-05-24T04:34:18.344Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/734c9d6844c51f68becb51e7fc9e3b4a3347c7d07be610e04e0103d437d4a407 200
+[debug] [2026-05-24T04:34:18.344Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/734c9d6844c51f68becb51e7fc9e3b4a3347c7d07be610e04e0103d437d4a407 [stream]
+[debug] [2026-05-24T04:34:18.348Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/93d2ed6011f640ed6596d61d20a86c6c11deb9ba454e4441638ab268d79396b8 200
+[debug] [2026-05-24T04:34:18.348Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/93d2ed6011f640ed6596d61d20a86c6c11deb9ba454e4441638ab268d79396b8 [stream]
+[debug] [2026-05-24T04:34:18.386Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c84f4809fe4964e7e1f154e7c8601ed14fc7c11acf485658eef25d83ae00ceb 200
+[debug] [2026-05-24T04:34:18.386Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/4c84f4809fe4964e7e1f154e7c8601ed14fc7c11acf485658eef25d83ae00ceb [stream]
+[debug] [2026-05-24T04:34:18.387Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/99d08fcd09e66ce216334cce6781d9707a3280fe7cf3277f49ebe6eea49f9457 200
+[debug] [2026-05-24T04:34:18.387Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/99d08fcd09e66ce216334cce6781d9707a3280fe7cf3277f49ebe6eea49f9457 [stream]
+[debug] [2026-05-24T04:34:18.388Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/724cb38995a34575719a4f87bf38a08d671eb2a557ace7622897311f14cd764a 200
+[debug] [2026-05-24T04:34:18.388Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/724cb38995a34575719a4f87bf38a08d671eb2a557ace7622897311f14cd764a [stream]
+[debug] [2026-05-24T04:34:18.451Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/9193f72aa0f9128f5d41bc2889d129b2e53c4d2145a2a4151de922ca96e10afa 200
+[debug] [2026-05-24T04:34:18.451Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/9193f72aa0f9128f5d41bc2889d129b2e53c4d2145a2a4151de922ca96e10afa [stream]
+[debug] [2026-05-24T04:34:18.477Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/bb8281767689a1eff39aef44790ec8685c9ed844892545f387dfb936a8c32ecd 200
+[debug] [2026-05-24T04:34:18.478Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/bb8281767689a1eff39aef44790ec8685c9ed844892545f387dfb936a8c32ecd [stream]
+[debug] [2026-05-24T04:34:18.481Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/1974e35c866586329efbe12dfab68d851c6b8e5ae2d63abb7c4b98f3f507e4bc 200
+[debug] [2026-05-24T04:34:18.481Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/1974e35c866586329efbe12dfab68d851c6b8e5ae2d63abb7c4b98f3f507e4bc [stream]
+[debug] [2026-05-24T04:34:18.574Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3 200
+[debug] [2026-05-24T04:34:18.574Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3 [stream]
+[debug] [2026-05-24T04:34:18.575Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/78cb8c493588b7643bcd6369c6a2d952c7c5b556b3db409c115583c9d8646e13 200
+[debug] [2026-05-24T04:34:18.575Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/78cb8c493588b7643bcd6369c6a2d952c7c5b556b3db409c115583c9d8646e13 [stream]
+[debug] [2026-05-24T04:34:18.614Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/1624c82a27b9d07e874457fa6cd870145bcaef25f21c48861b0b67ff5145b981 200
+[debug] [2026-05-24T04:34:18.614Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/lootz-ai/versions/8109c6fc8fa04903/files/1624c82a27b9d07e874457fa6cd870145bcaef25f21c48861b0b67ff5145b981 [stream]
+[debug] [2026-05-24T04:34:18.614Z] [hosting][upload queue][FINAL] {"max":2276,"min":1551,"avg":1894.060606060606,"active":0,"complete":33,"success":33,"errored":0,"retried":0,"total":33,"elapsed":2288}
+[info] +  hosting[lootz-ai]: file upload complete 
+[debug] [2026-05-24T04:34:18.619Z] [hosting] deploy completed after 3239ms
+[debug] [2026-05-24T04:34:18.619Z] [
+  {
+    "config": {
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "lootz-ai"
+    },
+    "version": "projects/73205510627/sites/lootz-ai/versions/8109c6fc8fa04903"
+  }
+]
+[info] i  hosting[lootz-ai]: finalizing version... 
+[debug] [2026-05-24T04:34:18.624Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:18.625Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:18.630Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/versions/8109c6fc8fa04903 updateMask=status%2Cconfig
+[debug] [2026-05-24T04:34:18.630Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/versions/8109c6fc8fa04903 {"status":"FINALIZED","config":{}}
+[debug] [2026-05-24T04:34:19.581Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/versions/8109c6fc8fa04903 200
+[debug] [2026-05-24T04:34:19.581Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/versions/8109c6fc8fa04903 {"name":"projects/73205510627/sites/lootz-ai/versions/8109c6fc8fa04903","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-24T04:34:14.257852Z","createUser":{"email":"guoxuan99@gmail.com"},"finalizeTime":"2026-05-24T04:34:19.425156Z","finalizeUser":{"email":"guoxuan99@gmail.com"}}
+[debug] [2026-05-24T04:34:19.582Z] [hosting] finalized version for lootz-ai:[object Object]
+[info] +  hosting[lootz-ai]: version finalized 
+[info] i  hosting[lootz-ai]: releasing new version... 
+[debug] [2026-05-24T04:34:19.583Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:19.583Z] Checked if tokens are valid: true, expires at: 1779600815051
+[debug] [2026-05-24T04:34:19.583Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/channels/live/releases versionName=projects%2F73205510627%2Fsites%2Flootz-ai%2Fversions%2F8109c6fc8fa04903
+[debug] [2026-05-24T04:34:19.583Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/channels/live/releases {}
+[debug] [2026-05-24T04:34:20.276Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/channels/live/releases 200
+[debug] [2026-05-24T04:34:20.277Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/lootz-ai/channels/live/releases {"name":"projects/73205510627/sites/lootz-ai/channels/live/releases/1779597259411000","version":{"name":"projects/73205510627/sites/lootz-ai/versions/8109c6fc8fa04903","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-24T04:34:14.257852Z","createUser":{"email":"guoxuan99@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJgILvnaBB_-XKTuPKrmxkXk4vAyYzDk0X8g59_jcsbM2T9BxLgYA"},"finalizeTime":"2026-05-24T04:34:19.425156Z","finalizeUser":{"email":"guoxuan99@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJgILvnaBB_-XKTuPKrmxkXk4vAyYzDk0X8g59_jcsbM2T9BxLgYA"}},"type":"DEPLOY","releaseTime":"2026-05-24T04:34:19.411Z","releaseUser":{"email":"guoxuan99@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJgILvnaBB_-XKTuPKrmxkXk4vAyYzDk0X8g59_jcsbM2T9BxLgYA"}}
+[debug] [2026-05-24T04:34:20.277Z] [hosting] release: {"name":"projects/73205510627/sites/lootz-ai/channels/live/releases/1779597259411000","version":{"name":"projects/73205510627/sites/lootz-ai/versions/8109c6fc8fa04903","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-24T04:34:14.257852Z","createUser":{"email":"guoxuan99@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJgILvnaBB_-XKTuPKrmxkXk4vAyYzDk0X8g59_jcsbM2T9BxLgYA"},"finalizeTime":"2026-05-24T04:34:19.425156Z","finalizeUser":{"email":"guoxuan99@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJgILvnaBB_-XKTuPKrmxkXk4vAyYzDk0X8g59_jcsbM2T9BxLgYA"}},"type":"DEPLOY","releaseTime":"2026-05-24T04:34:19.411Z","releaseUser":{"email":"guoxuan99@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocJgILvnaBB_-XKTuPKrmxkXk4vAyYzDk0X8g59_jcsbM2T9BxLgYA"}}
+[info] +  hosting[lootz-ai]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/lootz-ai/overview
+[info] Hosting URL: https://lootz-ai.web.app
+[debug] [2026-05-24T04:34:30.327Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:309:49)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[error] 
+[error] Error: An unexpected error has occurred.
